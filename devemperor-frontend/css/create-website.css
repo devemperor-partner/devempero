@@ -1,0 +1,132 @@
+.input-container-sm{
+   width: 98%;
+    max-width:98%;
+    
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #eee;
+     box-shadow: 0 3px 15px rgb(0 0 0 / 5%);
+  background-color: #fff;
+  color: #000;
+
+}
+.input-container-dt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+/* width: 90%; */
+
+}
+
+
+
+
+
+.h3-sm-bw{
+    padding: 20px;
+}
+
+textarea{
+      margin: auto;
+   
+    padding: 15px;
+    border-radius: 5px;
+    border-color: #eee;
+    border: 1px solid #eee;
+    background-color: #eee;
+   
+}
+.label{
+    padding: 0px;
+    margin: 0px;
+    font-weight: 500;
+  
+}
+
+
+.input-container-dt>div{
+    width: 30%;
+} 
+
+
+
+
+
+
+
+@media (max-width:500px) {
+    textarea{
+      margin: auto;
+    width: 96%;
+    
+}
+.input-container-dt>div{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+}
+
+@media (min-width:500px) {
+
+   textarea{
+      margin: auto;
+    width: 96%;
+    
+}
+.input-container-dt>div{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+} 
+
+    @media (min-width: 750px){
+#full-name {
+    position: relative;
+    float: left;
+    margin-left: 70px;
+    bottom: 10px;
+    font-size: 20px;
+}
+     .input-container-dt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+width: 100%;
+
+}
+
+    }
+
+    @media (min-width:1000px) {
+        .input-container-dt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+width: 100%;
+
+}
+    } 
+
+      @media (min-width:1200px) {
+        .input-container-dt{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+width: 100%;
+
+}
+
+.input-container-dt>div{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+    } 

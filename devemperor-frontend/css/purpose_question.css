@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Poppins&display=swap');
+body{
+    font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+
+@media screen {
+    
+}
+
+@media (min-width:500px) {
+    main{
+        position: absolute;
+        top: 30%;
+        /* margin-top: 10%; */
+        left: 10%;
+    }
+
+    .purpose_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+}

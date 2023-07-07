@@ -1,0 +1,33 @@
+const mongoose = require("mongoose");
+const connect_db = require("./db_connector");
+connect_db("connected to user database");
+require("./user");
+const website_information_schema = mongoose.Schema({
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: "user",
+  },
+  domain_name: String,
+  website_category: String,
+  would_you_need_a_mobile_app_later: String,
+  budget: Number,
+  what_is_your_business_about: String,
+  Why_do_you_need_a_website: String,
+  Who_is_your_target_audience: String,
+  what_will_make_this_website_stand_out_the_competition: String,
+  who_are_your_top_competitors: String,
+  What_would_you_like_to_have_on_your_website_regarding_to_branding_and_styling:
+    String,
+
+  organization_name: String,
+  organization_phone_number: String,
+  personal_phone_number: String,
+  website_owner: String,
+});
+
+const Website_information = mongoose.model(
+  "Website_information",
+  website_information_schema,
+);
+module.exports = Website_information;

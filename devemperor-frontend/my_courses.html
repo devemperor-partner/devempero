@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="css/assets/icon.png" type="image/x-icon" />
+    <title>Devemperor Account Dashboard</title>
+    <meta name="description" content="Devemperor Account Dashboard">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/dashboard-notop.css" />
+
+    <link rel="stylesheet" href="css/dashboard-ce.css">
+    <link rel="stylesheet" href="css/card-notop.css">
+    <script src="javascript/checklogin.js"></script>
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="nav-container">
+                <div class="flex-stretch">
+                    <div class="flex-sm">
+                        <img src="https://preview.webpixels.io/quick-website-ui-kit/assets/img/brand/light-mono.svg"
+                            alt="" class="logo-sm-m" />
+                    </div>
+
+                    <div class="harmburger" id="harmburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </div>
+                </div>
+
+
+
+                <div class="bi-p-ring">
+                    <div class="notification-container">
+                        <div id="ring-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="gray"
+                                class="bi bi-bell m-4" viewBox="0 0 16 16" id="ring">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                            </svg>
+                        </div>
+
+                        <div id="notification-box" class="no_notification-box">
+                            <!-- <br> -->
+                            <p style="margin: 4px;">No Notification</p>
+
+                        </div>
+                    </div>
+
+                    <div class="userbox-container">
+
+                        <div id="user_box_icon">
+                            <img src="css/assets/user.png" class="bi-person-image" id="person-image" alt="" />
+                        </div>
+
+                        <div id="userdropbox" class="no_userdropbox">
+                            <p style="position: absolute; margin: 8px; ">Account Details</p>
+                            <br>
+                            <hr>
+
+                            <div>
+                                <i class="fa fa-user" aria-hidden="true"
+                                    style="color: gray; font-size: 20px; margin: 4px;"></i>
+                                <a href="profile.html">My Profile</a>
+                            </div>
+
+                            <div>
+                                <i class="fa fa-sign-out" aria-hidden="true"
+                                    style="color: gray; font-size: 22px; margin: 4px;"></i>
+
+                                <a id="logoutBtn">Logout</a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr />
+    <!-- <div class="no-notification">
+          <a href="">You successfully created an account</a>
+          <br />
+          <a href="">Start now by requesting for a card</a>
+        </div>
+        <div class="no-notification_02">
+          <a href="profile.html">My Profile</a>
+          <br />
+          <a href="" id="logout">log Out</a>
+        </div> -->
+
+
+    <nav class="nav-hide" id="nav">
+        <!-- class="nav-hide" -->
+
+        <div class="cancel" id="cancel">
+            <i class="fa fa-times" aria-hidden="true" style="font-size: 20px; color: #fff;"></i>
+        </div>
+
+        <br /><br />
+        <div class="menu">
+            <img src="css/assets/menu.png" alt="" class="carousel-db" />
+            <a href="dashboard.html" style="color: #fff"> MAIN MENU</a>
+        </div>
+
+
+        <div>
+            <!-- <i class="fa fa-ravelry" style="color: #fff;" class="carousel-db" aria-hidden="true"></i> -->
+            <i class="fa fa-paper-plane" aria-hidden="true"
+                style="color: rgb(190, 187, 187); font-size: 20px; margin: 9px;"></i>
+            <!-- <img src="css/assets/deposit.png" alt="" class="carousel-db" /> -->
+            <a href="deposit-fund.html" style="color: #fff">DEPOSIT FUND</a>
+        </div>
+
+
+
+        <div>
+            <!-- <img src="css/assets/data-science.png" alt="" style="  width: 20px; margin: 4px;" /> -->
+            <i class="fa fa-globe" aria-hidden="true"
+                style="color: rgb(190, 187, 187); font-size: 20px; margin: 9px;"></i>
+
+            <a href="create-website.html" style="color:#fff">CREATE WEBSITE</a>
+        </div>
+
+        <div>
+            <i class="fa fa-th-large" aria-hidden="true"
+                style="color: rgb(190, 187, 187) ;  font-size: 20px; margin: 9px;"></i>
+
+            <!-- <img src="css/assets/smartphone.png" alt="" class="carousel-db" /> -->
+            <a href="create-mobileapp.html" style="color: #fff"> CREATE APP </a>
+        </div>
+
+        <div>
+            <!-- <img src="css/assets/data-science.png" alt="" style="  width: 20px; margin: 4px;" /> -->
+            <i class="fa fa-paste" aria-hidden="true"
+                style="color: rgb(190, 187, 187) ;  font-size: 20px; margin: 9px;"></i>
+            <a href="my_softwares.html" style="color: #fff">MY SOFTWARES</a>
+        </div>
+
+
+        <div>
+            <i class="fa fa-code" aria-hidden="true"
+                style="color: rgb(190, 187, 187) ; font-size: 20px; margin: 9px;"></i>
+            <!-- <img src="css/assets/code.png" alt="" class="carousel-db" /> -->
+            <a href="learn-coding.html" style="color: #fff">LEARN CODING</a>
+        </div>
+
+        <div>
+            <i class="fa fa-book" aria-hidden="true"
+                style="color: rgb(190, 187, 187);  font-size: 20px; margin: 9px;"></i>
+            <!-- <img src="css/assets/course.png" alt="" class="carousel-db" /> -->
+            <a href="my_courses.html" style="color: #fff">MY COURSES</a>
+        </div>
+
+        <br><br>
+        <!-- <div>
+              <img src="css/assets//loan-menu.png" alt="" class="carousel-db" />
+              <a href="loan-menu.html" style="color: purple">Loan Menu</a>
+            </div> -->
+
+        <!-- <div>
+              <img src="css/assets/loan.png" alt="" class="carousel-db" />
+              <a href="loan-application.html" style="color: teal">Apply for Loan</a>
+            </div>
+  
+            <div>
+              <img src="css/assets/beneficiary.png" alt="" class="carousel-db" />
+              <a href="profile.html">Beneficiary</a>
+            </div>
+  
+            <div>
+              <img src="css/assets/help.png" alt="" class="carousel-db" />
+              <a href="support.html" style="color: green">Get Help</a>
+            </div>
+            <div>
+              <img src="css/assets/lock.png" alt="" class="carousel-db" />
+              <a href="change-password.html"> Change Password</a>
+            </div>
+            <br /><br /><br /> -->
+    </nav>
+
+
+    <!-- </div> -->
+
+    <main>
+        <div class="dashboard-log">
+            <h3 class="color-head" style="text-align: center">CREATE WEBSITE</h3>
+
+            <div class="welcome-text-container">
+                <div>
+                    <!-- <br /> -->
+                    <p style="margin: 4px;">Welcome,</p>
+                    <h4 id="full-name">Chidera Emmanuel nwankwo eve...</h4>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="my_softwares">
+
+            <div id="errMessage"
+                style="width: 100%; padding: 10px; border-radius: 5px; display: none; color: #000; margin: 5px; background-color: #f8d7da;">
+            </div>
+
+
+
+            <div class="card_container" id="card_container">
+
+
+                <div class="col-lg-4 col-md">
+                    <div class="card card-pricing text-center px-3 hover-scale-110">
+                        <div class="card-header py-5 border-0 delimiter-bottom">
+                            <div class="h1 text-center mb-0">
+                                ₦500,000
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <ul class="list-unstyled text-sm mb-4">
+                                <li style="font-weight: bold;">HTML5</li>
+                                <li>SOFTWARE TYPE: WEBSITE</li>
+                                <li>SOFTWARE CATEGORY: ECCOMMERCE WEBSITE</li>
+                                <li>DEVELOPMENT STATUS: <div>PENDING</div>
+                                </li>
+                                <!-- <li>
+                                    JAVASCRIPT
+                                </li>
+                                <li>
+                                    REACT
+                                </li>
+                                <li>REDUX</li> -->
+                                <button class="btn btn-primary">Make Payment</button>
+                                <li><a href="">edit</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-lg-4 col-md">
+                    <div class="card card-pricing text-center px-3 hover-scale-110">
+                        <div class="card-header py-5 border-0 delimiter-bottom">
+                            <div class="h1 text-center mb-0">
+                                ₦500,000
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <ul class="list-unstyled text-sm mb-4">
+                                <li style="font-weight: bold;">HTML5</li>
+                                <li>SOFTWARE TYPE: WEBSITE</li>
+                                <li>SOFTWARE CATEGORY: ECCOMMERCE WEBSITE</li>
+                                <li>DEVELOPMENT STATUS: <div>PENDING</div>
+                                </li>
+                                <!-- <li>
+                                                    JAVASCRIPT
+                                                </li>
+                                                <li>
+                                                    REACT
+                                                </li>
+                                                <li>REDUX</li> -->
+                                <button class="btn btn-primary">Make Payment</button>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+    </main>
+
+    <script src="javascript/nav.js"></script>
+    <script src="javascript/dashboard.js"></script>
+    <script src="javascript/my_softwares.js"></script>
+</body>
+</html>

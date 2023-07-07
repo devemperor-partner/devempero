@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    
+    <main>
+        <div class="txt-bg-sm">
+<div class="rocket-icon-container"> <img src="css/assets/shuttle.png" alt="" class="rocket-icon" style="width: 50px;"></div>
+            <h2>Welcome</h2>
+<p>You are 30 seconds away from getting a proffesional web or mobile app</p>
+     
+
+<br><br>
+
+<!-- <div>  
+ <a href="">
+    <span class="btn-inner--icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline></svg></span>
+ </a>
+<div> -->
+    <a href="" class="login-btn m-2" >Sign In         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline></svg></a>
+
+</div>
+
+        <div class="input-container">
+
+<div class="design-tp">
+    <div  class="softxt">
+        <p>SoftJovial</p>
+    </div>
+
+</div>
+
+<div class="second-inp-contain">
+    <h1 class="input-txt">Easily Register an account today</h1>
+    <div id="errMessage_01" style="color: red; font-size: 16px;text-align: center;" ></div>
+
+    <input type="text" name="" id="first_name" placeholder="First Name">
+<input type="text" name="" id="last_name" placeholder="Last Name">
+<input type="email" name="" id="Email" placeholder="Email">
+<input type="text" name="" id="phone_number" placeholder="Phone Number">
+
+<select name="country" id="country">
+    <option value="">Country</option>
+    <option value="Ghana">Ghana</option>
+</select>
+
+<input type="text" name="" id="password" placeholder="Password">
+
+    <input type="text" name="" id="confirm_password" placeholder="Confirm Password">
+
+
+
+<div class="passport_container">
+    <label for="passport" class="passport_txt">Passport/photo</label>
+    <br>
+    <input type="file" name="" id="passport"  placeholder="Passport/photo">
+
+</div>
+<div id="errMessage_02" style="color: red; font-size: 16px;text-align: center;"></div>
+<button  class="sign-btn m-2" id="register" >Register         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline></svg></button>
+
+   <!-- <a href="" class="sign-btn m-2" id="register" >Register         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline></svg></a> -->
+
+</div>
+</div>
+        </div>
+    </main>
+    <script src="javascript/register.js"></script>
+    <script src="javascript/register_01.js"></script>
+</body>
+</html>

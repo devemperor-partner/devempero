@@ -1,0 +1,150 @@
+
+.div-card-container{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 50px;
+    }
+
+.card.card-container{
+  width: 300px;
+  padding: 10px;
+  
+  transform: scale(1.05);
+}
+.card.card-container:hover{
+  transform: scale(1.08);
+}
+
+.h1.text-center{
+  font-size: 30px;
+  font-weight: 800;
+ position: -ms-page;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  color: #152c5b;
+}
+.delimeter-line{
+      width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 1px;
+    background: radial-gradient( ellipse at center, #d1dbe7 0, rgba(255, 255, 255, 0) 75% );
+  }
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.card.diff-color{
+background-color: #008aff;
+color: #fff;
+}
+.card.diff-color a{
+  background-color: #fff;
+  color: #000;
+}
+
+
+.card{
+     position: relative;
+         box-shadow: 0 0 1.25rem rgb(31 45 61 / 5%);
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #eaecf3;
+    border-radius: 0.75rem;
+    
+    font-family: "Nunito Sans", sans-serif;
+color: #718096;
+text-align: center;
+font-size: 15px;
+}
+.card a{
+        color: #fff;
+    background-color: #ffbe3d;
+    border-color: #ffbe3d;
+    box-shadow: none;
+    text-decoration: none;
+    padding: 6px 10px;
+   
+    border-radius: 4px;
+}
+
+
+
+@media (max-width:400px) {
+  .card.card-container{
+  width:80%;
+  padding: 10px;
+ 
+  transform: scale(1.05);
+}
+}
+
+@media (min-width: 400px) {
+  .section-container {
+    height: 550px;
+  }
+  .head-txt::before {
+    font-size: 40px;
+  }
+  .small-hd::before {
+    font-size: 19px;
+  }
+ 
+  figure{
+  width: 300px;
+  padding: 10px;
+  /* text-align: center; */
+  transform: scale(1.05);
+}
+}
+
+@media (min-width: 700px) {
+  .section-container {
+    height: 100vh;
+  }
+  .head-txt::before {
+    font-size: 70px;
+  }
+  .small-hd::before {
+    font-size: 22px;
+  }
+
+  .flex-div-container {
+    width: 85%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .contan-sm-txt {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .small-hd::before {
+    font-size: 30px;
+  }
+  .flex-div-container {
+    flex-direction: row;
+    width: 98%;
+  }
+  .flex-div-container > div {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .flex-div-container {
+    flex-direction: row;
+    width: 90%;
+  }
+}
