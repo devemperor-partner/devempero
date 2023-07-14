@@ -6,7 +6,9 @@ const handle_set_dashboard = (data) => {
   select_element("full-name").innerHTML=data.full_name;
   select_element("person-image").src = data.user_icon;
   select_element("naira-sign").innerHTML = "₦";
-  select_element("user_balance").innerHTML = `${data.final_balance}.0`;
+  select_element("user_balance").innerHTML = `${data.final_balance
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.0`;
   select_element("softwares").innerHTML = data.softwares;
   select_element("courses").innerHTML = data.courses;
   select_element("referral_link").innerHTML = data.referral_link;

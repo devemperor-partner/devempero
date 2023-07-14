@@ -32,6 +32,11 @@ const app_information_schema = mongoose.Schema({
   Personal_Phone_Number: String,
   Whatsapp_Number: String,
   charge: Number,
+  made_payment: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
   development_status: {
     type: String,
     enum: ["PENDING", "IN DEVELOPMENT", "PRODUCTION"],

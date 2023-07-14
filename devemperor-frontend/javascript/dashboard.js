@@ -4,7 +4,10 @@ const select_element = (element) => {
 
 const handle_set_dashboard = (data) => {
   select_element("full-name").innerHTML = data.full_name;
-  select_element("person-image").src = data.user_icon;
+  // select_element("person-image").src = data.user_icon;
+  document
+    .querySelectorAll("#person-image")
+    .forEach((user_icon) => (user_icon.src = data.user_icon));
   // select_element("naira-sign").innerHTML = "₦";
   // select_element("user_balance").innerHTML = `${data.final_balance}.0`;
   // select_element("softwares").innerHTML = data.softwares;

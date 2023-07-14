@@ -76,6 +76,7 @@ const update_website_information = async (data) => {
       return;
     }
     document.querySelector("#submit").value = "Success";
+    window.location.replace("action/loading.html")
     // window.location.href = `mobileapp-informations.html?${result.message}`;
     // document.querySelector(".mail_success").innerHTML = result.message;
     // document.querySelector(".mail_success").style.display = "block";
@@ -183,3 +184,5 @@ document.addEventListener("DOMContentLoaded", () => {
   const websiteID = getParam();
   if (!websiteID) return window.location.replace("/create-website.html");
 });
+
+

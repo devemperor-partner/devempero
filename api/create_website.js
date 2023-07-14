@@ -20,6 +20,7 @@ Router.post("/", verifyToken, async (req, res) => {
       });
     const website_informations = await new Create_website_informations({
       user: req.body.user,
+      website_name:req.body.website_name,
       domain_name: req.body.domain_name,
     });
 

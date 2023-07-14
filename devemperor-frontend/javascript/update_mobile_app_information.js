@@ -76,6 +76,8 @@ const update_mobile_app_information = async (data) => {
       return;
     }
     document.querySelector("#submit").value = "Success";
+    window.location.replace("action/loading.html");
+
     // window.location.href = `mobileapp-informations.html?${result.message}`;
     // document.querySelector(".mail_success").innerHTML = result.message;
     // document.querySelector(".mail_success").style.display = "block";
@@ -179,3 +181,4 @@ document.addEventListener("DOMContentLoaded", () => {
   const app = getParam();
   if (!app) return window.location.replace("/create-mobileapp.html");
 });
+

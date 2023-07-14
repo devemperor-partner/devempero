@@ -126,7 +126,7 @@
         <div>
             <!-- <i class="fa fa-ravelry" style="color: #fff;" class="carousel-db" aria-hidden="true"></i> -->
             <i class="fa fa-paper-plane" aria-hidden="true"
-                style="color: rgb(190, 187, 187); font-size: 20px; margin: 4px;"></i>
+                style="color: rgb(190, 187, 187); font-size: 20px; margin: 6px;"></i>
             <!-- <img src="css/assets/deposit.png" alt="" class="carousel-db" /> -->
             <a href="deposit-fund.html" style="color: #fff">DEPOSIT FUND</a>
         </div>
@@ -136,14 +136,14 @@
         <div>
             <!-- <img src="css/assets/data-science.png" alt="" style="  width: 20px; margin: 4px;" /> -->
             <i class="fa fa-globe" aria-hidden="true"
-                style="color: rgb(190, 187, 187); font-size: 20px; margin: px;"></i>
+                style="color: rgb(190, 187, 187); font-size: 20px; margin: 8px;"></i>
 
             <a href="create-website.html" style="color:#fff">CREATE WEBSITE</a>
         </div>
 
         <div>
             <i class="fa fa-th-large" aria-hidden="true"
-                style="color: rgb(190, 187, 187) ;  font-size: 20px; margin: 4px;"></i>
+                style="color: rgb(190, 187, 187) ;  font-size: 20px; margin: 8px;"></i>
 
             <!-- <img src="css/assets/smartphone.png" alt="" class="carousel-db" /> -->
             <a href="create-mobileapp.html" style="color: #fff"> CREATE APP </a>
@@ -152,21 +152,21 @@
         <div>
             <!-- <img src="css/assets/data-science.png" alt="" style="  width: 20px; margin: 4px;" /> -->
             <i class="fa fa-paste" aria-hidden="true"
-                style="color: rgb(190, 187, 187) ;  font-size: 20px; margin: 4px;"></i>
+                style="color: rgb(190, 187, 187) ;  font-size: 20px; margin: 8px;"></i>
             <a href="my_softwares.html" style="color: #fff">MY SOFTWARES</a>
         </div>
 
 
         <div>
             <i class="fa fa-code" aria-hidden="true"
-                style="color: rgb(190, 187, 187) ; font-size: 20px; margin: 4px;"></i>
+                style="color: rgb(190, 187, 187) ; font-size: 20px; margin: 8px;"></i>
             <!-- <img src="css/assets/code.png" alt="" class="carousel-db" /> -->
             <a href="learn-coding.html" style="color: #fff">LEARN CODING</a>
         </div>
 
         <div>
             <i class="fa fa-book" aria-hidden="true"
-                style="color: rgb(190, 187, 187);  font-size: 20px; margin: 4px;"></i>
+                style="color: rgb(190, 187, 187);  font-size: 20px; margin: 8px;"></i>
             <!-- <img src="css/assets/course.png" alt="" class="carousel-db" /> -->
             <a href="my_courses.html" style="color: #fff">MY COURSES</a>
         </div>
@@ -222,31 +222,39 @@
 
 
             <div class="card profile-card">
-                <!-- <img src="css/assets/hero-bg.jpg" class="userIcon" alt=""> -->
+                <img src="css/assets/user.png" class="userIcon" id="person-image" alt="profile">
 
-                <input type="file" name="" id="">
-                <a style="color: #0d6efd;"> Change profile photo</a>
+                <input type="file" name="" id="open_images">
+                <a style="color: #0d6efd;" id="change_profile"> Change profile photo</a>
+                <div class="input_error_message" id="input_error_message"
+                    style="color: red; font-size: 16px;text-align: center;"></div>
 
-                <input type="text" name="" id="" placeholder="Full Name">
-                <input type="text" name="" id="" placeholder="Email">
-                <!-- <div><label for="email">verified</label> -->
-                    <a > Send Verification Link</a>
+                <input type="text" name="" id="full_name" placeholder="Full Name">
+                <input type="text" name="" id="email" placeholder="Email">
+                <div><label for="email" id="email_label"></label>
+                    <a style="color: #0d6efd;" id="send_verification_link"></a>
+                </div>
+                <div class="verification_mail_error" id="verification_mail_error" style="color: red; font-size: 16px;">
+                </div>
+
+                <input type="number" name="" id="phone_number" placeholder="Phone number">
+                <button class="btn btn-primary" id="update_user_info"
+                    style="width: 150px; margin-top: 8px;">Save</button>
+
                 <!-- </div> -->
-
-                <input type="text" name="" id="" placeholder="phone_number">
-                <button class="btn btn-primary" style="width: 200px;">Change password</button>
-
-            <!-- </div> -->
-        </div>
+            </div>
 
             <div class="card security-card">
 
                 <h3>Account Security settings</h3>
-                <input type="password" name="" id="old_password">
-                <input type="password" name="" id="" placeholder="New Password">
-                <input type="password" name="" id="" placeholder="Confirm Password">
+                <input type="password" name="old_password" id="old_password" placeholder="Old Password">
+                <input type="password" name="" id="new_password1" placeholder="New Password">
+                <input type="password" name="" id="new_password2" placeholder="Confirm Password">
+                <div class="password_error" id="password_error" style="color: red; font-size: 16px;text-align: center;">
+                </div>
+
                 <br>
-                <button class="btn btn-primary" style="width: 200px;">Change password</button>
+                <button class="btn btn-primary" style="width: 180px;" id="change_password">Change password</button>
             </div>
 
 
@@ -257,7 +265,12 @@
     </main>
 
     <script src="javascript/nav.js"></script>
-    <script src="javascript/transaction_history.js"></script>
-    <script src="javascript/dashboard.js"></script>
+    <script src="javascript/profile/profile.js"></script>
+    <script src="javascript/profile/change_password.js"></script>
+    <script src="javascript/profile/update_userinfo.js"></script>
+
+    <script src="javascript/profile/profile-info.js"></script>
+    <script src="javascript/profile/send_verification_link.js"></script>
+
 </body>
 </html>

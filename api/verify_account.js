@@ -5,7 +5,7 @@ const Account_verification = require("../model/sign_up_verification");
 const User = require("../model/user");
 const Router = express.Router();
 
-Router.post("/",  async (req, res) => {
+Router.post("/", async (req, res) => {
   try {
     const req_isvalid = validate_account_verification(req.body);
     if (req_isvalid != true)
@@ -28,10 +28,10 @@ Router.post("/",  async (req, res) => {
         errMessage:
           "Something went wrong, please login again to verify your account",
       });
-      await Account_verification.findByIdAndDelete(
-        account_verification_isfound._id,
-      );
-    await user.set({ account_is_verified: true });
+    await Account_verification.findByIdAndDelete(
+      account_verification_isfound._id,
+    );
+    await user.set({ account_is_verified: true, changed_mail: false });
     await user.save();
     res.status(200).json({ error: false, message: "verified" });
   } catch (error) {

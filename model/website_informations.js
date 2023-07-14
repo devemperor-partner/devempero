@@ -9,7 +9,7 @@ const website_information_schema = mongoose.Schema({
     required: true,
     ref: "user",
   },
-  website_name:String,
+  website_name: String,
   domain_name: String,
   website_category: String,
   Would_you_need_a_mobile_app_for_this_website_later: String,
@@ -30,7 +30,13 @@ const website_information_schema = mongoose.Schema({
   Whatsapp_Number: String,
   website_owner: String,
 
+  website_link: String,
   charge: Number,
+  made_payment: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
   development_status: {
     type: String,
     enum: ["PENDING", "IN DEVELOPMENT", "PRODUCTION"],

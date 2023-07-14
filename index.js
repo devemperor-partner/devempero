@@ -56,6 +56,9 @@ app.use("/api/users/myaccount", fetch_user);
 const resend_link = require("./api/resend_link");
 app.use("/api/user/resendlink", resend_link);
 
+const send_verification_link = require("./api/send_verification_link");
+app.use("/api/user/send_verification_link", send_verification_link);
+
 const change_signupmail = require("./api/change_signupmail");
 app.use("/api/user/change_signupmail", change_signupmail);
 
@@ -96,6 +99,21 @@ app.use("/api/user/softwares", fetch_softwares);
 
 const fetch_transactions = require("./api/fetch_transactions");
 app.use("`/api/user/transactions/fetch`", fetch_transactions);
+
+const update_user = require("./api/updateuser");
+app.use("/api/user/update", update_user);
+
+const learn_coding = require("./api/learn-coding");
+app.use("/api/user/learn-coding", learn_coding);
+
+const fetch_coding_courses = require("./api/fetch_coding_courses");
+app.use("/api/codig_courses/fetch", fetch_coding_courses);
+
+const software_payment = require("./api/software_payment");
+app.use("/api/user/software/payment", software_payment);
+
+const purchase_course = require("./api/course_payment");
+app.use("/api/user/course/purchase", purchase_course);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`app listening on port ${port}`));

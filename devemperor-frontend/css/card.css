@@ -4,7 +4,7 @@
   border-radius: 10px;
   padding: 20px;
   /* max-width: 600px; */
- max-width: 96%;
+  max-width: 96%;
   margin: 50px auto;
 }
 
@@ -29,7 +29,11 @@
   margin-bottom: 20px;
 }
 
-input[type="text"],input[type="number"],input[type="file"],input[type="date"],input[type="time"],
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="date"],
+input[type="time"],
 select {
   width: 100%;
   padding: 10px;
@@ -42,7 +46,31 @@ select {
   background-color: #e9ecef;
   color: #555;
 }
-
+.amount_container_box {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  /* background-color: #fff; */
+  background-color: #e9ecef;
+  color: #555;
+}
+.course_price {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  /* background-color: #fff; */
+  background-color: #e9ecef;
+  color: #555;
+  margin-bottom: 20px;
+}
 select {
   appearance: none;
   background: transparent;
@@ -71,7 +99,7 @@ input[type="submit"]:hover {
   background-color: #0069d9;
 }
 
-.bank_detail{
+.bank_detail {
   background-color: #e9ecef;
   padding: 10px;
   color: #32325d;

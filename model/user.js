@@ -15,15 +15,20 @@ const userSchema = mongoose.Schema({
     minLength: 3,
     unique: true,
   },
+  changed_mail: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
   phone_number: {
     type: String,
     required: true,
     minLength: 0,
   },
-  user_icon:{
+  user_icon: {
     type: String,
     required: true,
-    default:"css/assets/user.png"
+    default: "css/assets/user.png",
   },
   // country: {
   //   type: String,
@@ -52,12 +57,12 @@ const userSchema = mongoose.Schema({
     min: 0,
     default: 0,
   },
-  courses: { 
+  courses: {
     type: Number,
-     required: true,
-      min: 0,
-       default: 0
-       },
+    required: true,
+    min: 0,
+    default: 0,
+  },
   // verification_link: String,
   password: {
     type: String,
